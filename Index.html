@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beloved: A Multi-Genre Exploration</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f1e9;
+            color: #333;
+        }
+        
+        header {
+            background-color: #3a2618;
+            color: #f5f1e9;
+            padding: 2rem;
+            text-align: center;
+            background-image: url('/api/placeholder/800/200');
+            background-blend-mode: overlay;
+            background-size: cover;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            color: #3a2618;
+            border-bottom: 2px solid #d1b48c;
+            padding-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .author {
+            font-size: 1rem;
+        }
+        
+        nav {
+            background-color: #614a3d;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: #f5f1e9;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #d1b48c;
+        }
+        
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .intro {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .genre-section {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .genre-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .genre-number {
+            background-color: #3a2618;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+        
+        .genre-title {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        
+        .quote-section {
+            background-color: #3a2618;
+            color: #f5f1e9;
+            padding: 3rem 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .quote {
+            font-size: 1.8rem;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .quote-author {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        
+        .audio-player {
+            width: 100%;
+            margin: 2rem 0;
+        }
+        
+        .pdf-viewer {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ddd;
+            margin: 2rem 0;
+            background-color: #f8f8f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .upload-section {
+            background-color: #f0e9dd;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin: 1rem 0 2rem 0;
+        }
+        
+        .upload-btn {
+            background-color: #614a3d;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        
+        .upload-btn:hover {
+            background-color: #3a2618;
+        }
+        
+        footer {
+            background-color: #3a2618;
+            color: #f5f1e9;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .sources {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        /* Information section specific styles */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Analysis section specific styles */
+        .analysis-container {
+            background-color: #f9f6f0;
+            border-left: 4px solid #614a3d;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        /* Creative section specific styles */
+        .creative-description {
+            font-style: italic;
+            background-color: #f0e9dd;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Beloved</h1>
+        <p class="subtitle">A Multi-Genre Exploration of Toni Morrison's Novel</p>
+        <p class="author">AP Literature Project by [Your Name]</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#genre1">Informational</a></li>
+            <li><a href="#genre2">Analytical</a></li>
+            <li><a href="#genre3">Creative</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="introduction" class="intro">
+            <h2>Introduction</h2>
+            <p>Welcome to my multi-genre project exploring Toni Morrison's powerful novel "Beloved." Published in 1987, this Pulitzer Prize-winning masterpiece delves into the psychological and physical effects of slavery, examining themes of memory, trauma, identity, and the supernatural through the story of Sethe and her family.</p>
+            <p>This project is divided into three distinct genres, each offering a different perspective on the novel:</p>
+            <ul>
+                <li><strong>Informational:</strong> Providing context, background, and factual information about the novel and its historical setting</li>
+                <li><strong>Analytical:</strong> A critical examination of the novel's themes, symbols, and narrative techniques</li>
+                <li><strong>Creative:</strong> An original piano composition inspired by the novel's emotional landscape, with both audio and sheet music</li>
+            </ul>
+        </section>
+        
+        <div class="quote-section">
+            <p class="quote">"Freeing yourself was one thing, claiming ownership of that freed self was another."</p>
+            <p class="quote-author">— Toni Morrison, Beloved</p>
+        </div>
+        
+        <!-- GENRE 1: INFORMATIONAL -->
+        <section id="genre1" class="genre-section">
+            <div class="genre-header">
+                <div class="genre-number">1</div>
+                <h2 class="genre-title">Genre: Informational</h2>
+            </div>
+            
+            <p>This section provides essential context for understanding "Beloved," including historical background, author information, and key facts about the novel.</p>
+            
+            <div class="info-grid">
+                <div>
+                    <h3>Historical Context</h3>
+                    <p>Based on the true story of Margaret Garner, an enslaved woman who killed her child rather than allowing her to be returned to slavery after escaping to Ohio in 1856. Morrison's novel explores the psychological aftermath of slavery in post-Civil War America.</p>
+                    
+                    <h3>Key Historical Events Referenced</h3>
+                    <ul>
+                        <li>The Fugitive Slave Act of 1850</li>
+                        <li>The Underground Railroad</li>
+                        <li>Reconstruction Era (1865-1877)</li>
+                        <li>Life in post-Civil War Cincinnati</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>About Toni Morrison</h3>
+                    <p>Toni Morrison (1931-2019) was a Nobel Prize-winning author known for her exploration of African American experiences. "Beloved" (1987) is considered her masterpiece and won the Pulitzer Prize for Fiction in 1988.</p>
+                    
+                    <h3>Literary Significance</h3>
+                    <p>The novel is renowned for its innovative narrative structure, use of magical realism, and unflinching portrayal of slavery's legacy. In 2006, The New York Times named "Beloved" the best American novel of the previous 25 years.</p>
+                </div>
+            </div>
+            
+            <h3>Timeline of Key Events in the Novel</h3>
+            <ul>
+                <li><strong>1855:</strong> Sethe escapes from Sweet Home plantation to 124 Bluestone Road</li>
+                <li><strong>1855:</strong> When slavecatchers arrive, Sethe attempts to kill her children, succeeding only in killing her unnamed "crawling already?" baby</li>
+                <li><strong>1865:</strong> Baby Suggs dies</li>
+                <li><strong>1873:</strong> Paul D arrives at 124 Bluestone Road</li>
+                <li><strong>1873:</strong> Beloved appears at 124</li>
+                <li><strong>1873-1874:</strong> The exorcism of Beloved by the women of the community</li>
+            </ul>
+        </section>
+        
+        <div class="quote-section">
+            <p class="quote">"This is not a story to pass on."</p>
+            <p class="quote-author">— Toni Morrison, Beloved</p>
+        </div>
+        
+        <!-- GENRE 2: ANALYTICAL -->
+        <section id="genre2" class="genre-section">
+            <div class="genre-header">
+                <div class="genre-number">2</div>
+                <h2 class="genre-title">Genre: Analytical</h2>
+            </div>
+            
+            <p>This analytical section examines the novel's complex themes, symbolism, and narrative techniques through close reading and critical interpretation.</p>
+            
+            <h3>Trauma and Memory</h3>
+            <div class="analysis-container">
+                <p>Morrison's concept of "rememory" is central to the novel, suggesting that traumatic experiences persist in both physical and psychological spaces. Sethe's statement that "Some things go. Pass on. Some things just stay" encapsulates how slavery's trauma refuses to remain in the past.</p>
+                <p>The character of Beloved physically embodies this concept—she is simultaneously the murdered baby returned, the collective trauma of Middle Passage, and the manifestation of unprocessed grief. Her presence forces characters to confront memories they have suppressed.</p>
+            </div>
+            
+            <h3>Motherhood Under Slavery</h3>
+            <div class="analysis-container">
+                <p>The novel presents motherhood as both a site of profound love and devastating vulnerability. Sethe's infamous act—killing her daughter rather than allowing her to be enslaved—represents the impossible choices faced by enslaved mothers.</p>
+                <p>Morrison challenges readers to understand this act not as simple infanticide but as a complex expression of maternal love under an inhumane system. As Sethe explains, "I took and put my babies where they'd be safe."</p>
+            </div>
+            
+            <h3>Narrative Structure Analysis</h3>
+            <div class="analysis-container">
+                <p>Morrison's fragmented narrative technique mirrors the disjointed nature of traumatic memory. The novel moves between different time periods and perspectives without clear transitions, requiring readers to piece together the full story gradually—much as the characters themselves must reconstruct their fractured histories.</p>
+                <p>The stream-of-consciousness sections, particularly Beloved's monologue in Part 2, represent the disorienting experience of trauma and the collapse of boundaries between past and present, self and other.</p>
+            </div>
+            
+            <h3>Symbolism</h3>
+            <ul>
+                <li><strong>124 Bluestone Road:</strong> The house itself becomes a character, with its moods reflecting the psychological states of its inhabitants</li>
+                <li><strong>The tree on Sethe's back:</strong> Her scarred back represents both the physical brutality of slavery and how that past is permanently inscribed on her body</li>
+                <li><strong>Water imagery:</strong> Throughout the novel, water symbolizes both birth and rebirth (Beloved emerging from water) and the cleansing of memory</li>
+                <li><strong>Color red:</strong> Associated with trauma, pain, and repressed memory throughout the text</li>
+            </ul>
+        </section>
+        
+        <div class="quote-section">
+            <p class="quote">"Anything dead coming back to life hurts."</p>
+            <p class="quote-author">— Toni Morrison, Beloved</p>
+        </div>
+        
+        <!-- GENRE 3: CREATIVE -->
+        <section id="genre3" class="genre-section">
+            <div class="genre-header">
+                <div class="genre-number">3</div>
+                <h2 class="genre-title">Genre: Creative</h2>
+            </div>
+            
+            <div class="creative-description">
+                <p>This piano improvisation titled "[Your Composition Title]" is my emotional response to Toni Morrison's "Beloved." The piece attempts to capture the novel's themes of memory, trauma, love, and redemption through musical expression. I've drawn inspiration from the novel's fragmented narrative structure, incorporating dissonant passages that resolve into moments of lyrical beauty—much like the characters' painful journeys toward healing.</p>
+            </div>
+            
+            <h3>Audio Recording</h3>
+            <p>Listen to my piano improvisation inspired by "Beloved":</p>
+            
+            <div class="upload-section">
+                <p>Upload your MP3 audio file:</p>
+                <input type="file" id="audio-upload" accept="audio/mp3">
+                <button class="upload-btn" onclick="uploadAudio()">Upload Audio</button>
+            </div>
+            
+            <audio id="beloved-audio" class="audio-player" controls>
+                <source src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <h3>Sheet Music</h3>
+            <p>View the musical score for my composition:</p>
+            
+            <div class="upload-section">
+                <p>Upload your PDF score:</p>
+                <input type="file" id="pdf-upload" accept="application/pdf">
+                <button class="upload-btn" onclick="uploadPDF()">Upload Score</button>
+            </div>
+            
+            <div class="pdf-viewer" id="score-viewer">
+                <p>PDF score will appear here after upload</p>
+            </div>
+            
+            <h3>Composition Notes</h3>
+            <p>This composition is structured in three movements, each representing different aspects of the novel:</p>
+            <ol>
+                <li><strong>Memory (0:00-2:30):</strong> Opening with fragmented, repetitive motifs that represent the disjointed nature of "rememory" in the novel</li>
+                <li><strong>Beloved's Return (2:31-5:15):</strong> Building tension and incorporating water-like arpeggios to symbolize Beloved's emergence from the water</li>
+                <li><strong>Community and Healing (5:16-end):</strong> Gradually resolving into a more harmonious section that represents the community's role in exorcising Beloved and beginning the healing process</li>
+            </ol>
+        </section>
+    </main>
+    
+    <footer>
+        <p>AP Literature Multi-Genre Project on "Beloved" by Toni Morrison</p>
+        <p>Created by [Your Name] | [Your School] | [Date]</p>
+        <div class="sources">
+            <p>Primary Source: Morrison, Toni. <em>Beloved</em>. Alfred A. Knopf, 1987.</p>
+            <p>Additional scholarly sources and criticism referenced throughout the analytical section.</p>
+        </div>
+    </footer>
+
+    <script>
+        function uploadAudio() {
+            const fileInput = document.getElementById('audio-upload');
+            const audioPlayer = document.getElementById('beloved-audio');
+            
+            if (fileInput.files && fileInput.files[0]) {
+                const file = fileInput.files[0];
+                const audioURL = URL.createObjectURL(file);
+                audioPlayer.src = audioURL;
+                audioPlayer.load();
+                alert('Audio uploaded successfully!');
+            } else {
+                alert('Please select an MP3 file to upload.');
+            }
+        }
+        
+        function uploadPDF() {
+            const fileInput = document.getElementById('pdf-upload');
+            const pdfViewer = document.getElementById('score-viewer');
+            
+            if (fileInput.files && fileInput.files[0]) {
+                const file = fileInput.files[0];
+                // In a real implementation, you would create an embed or iframe to display the PDF
+                // For this demonstration, we'll just show a message
+                pdfViewer.innerHTML = `
+                    <p>PDF "${file.name}" loaded successfully!</p>
+                    <p>(In a live version, the PDF would be displayed here)</p>
+                `;
+                alert('PDF uploaded successfully!');
+            } else {
+                alert('Please select a PDF file to upload.');
+            }
+        }
+    </script>
+</body>
+</html>
