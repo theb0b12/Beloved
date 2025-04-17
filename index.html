@@ -4,231 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beloved: A Multi-Genre Project</title>
-    <style>
-        body {
-            font-family: Georgia, serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f1e9;
-            color: #333;
-        }
-        
-        header {
-            background-color: #3a2618;
-            color: #f5f1e9;
-            padding: 2rem;
-            text-align: center;
-            background-image: url('/api/placeholder/800/200');
-            background-blend-mode: overlay;
-            background-size: cover;
-        }
-        
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        h2 {
-            color: #3a2618;
-            border-bottom: 2px solid #d1b48c;
-            padding-bottom: 0.5rem;
-        }
-        
-        .subtitle {
-            font-style: italic;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-        
-        .author {
-            font-size: 1rem;
-        }
-        
-        nav {
-            background-color: #614a3d;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        
-        nav li {
-            margin: 0 1rem;
-        }
-        
-        nav a {
-            color: #f5f1e9;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-        
-        nav a:hover {
-            color: #d1b48c;
-        }
-        
-        main {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-        
-        .intro {
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-        }
-        
-        .genre-section {
-            background-color: #fff;
-            border-radius: 5px;
-            padding: 2rem;
-            margin-bottom: 3rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .genre-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-        
-        .genre-number {
-            background-color: #3a2618;
-            color: #fff;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            margin-right: 1rem;
-        }
-        
-        .genre-title {
-            margin: 0;
-            font-size: 1.8rem;
-        }
-        
-        .quote-section {
-            background-color: #3a2618;
-            color: #f5f1e9;
-            padding: 3rem 2rem;
-            margin: 3rem 0;
-            text-align: center;
-        }
-        
-        .quote {
-            font-size: 1.8rem;
-            font-style: italic;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .quote-author {
-            margin-top: 1rem;
-            font-weight: bold;
-        }
-        
-        .audio-player {
-            width: 100%;
-            margin: 2rem 0;
-        }
-        
-        .pdf-viewer {
-            width: 100%;
-            height: 500px;
-            border: 1px solid #ddd;
-            margin: 2rem 0;
-            background-color: #f8f8f8;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .upload-section {
-            background-color: #f0e9dd;
-            padding: 1.5rem;
-            border-radius: 5px;
-            margin: 1rem 0 2rem 0;
-        }
-        
-        .upload-btn {
-            background-color: #614a3d;
-            color: white;
-            border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            margin-top: 1rem;
-        }
-        
-        .upload-btn:hover {
-            background-color: #3a2618;
-        }
-        
-        footer {
-            background-color: #3a2618;
-            color: #f5f1e9;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-        
-        .sources {
-            margin-top: 1rem;
-            font-size: 0.9rem;
-        }
-        
-        /* Information section specific styles */
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-        }
-        
-        @media (max-width: 768px) {
-            .info-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        /* Analysis section specific styles */
-        .analysis-container {
-            background-color: #f9f6f0;
-            border-left: 4px solid #614a3d;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-        }
-        
-        /* Creative section specific styles */
-        .creative-description {
-            font-style: italic;
-            background-color: #f0e9dd;
-            padding: 1.5rem;
-            border-radius: 5px;
-            margin-bottom: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Beloved</h1>
-        <p class="subtitle">A Multi-Genre Exploration of Toni Morrison's Novel</p>
-        <p class="author">By Logan Bordewin-Allen</p>
+        <h1>Beloved - A Multi Genre Exploration</h1>
+        <p class="author">By: Logan Bordewin-Allen</p>
     </header>
     
     <nav>
@@ -237,24 +18,26 @@
             <li><a href="#genre1">Informational</a></li>
             <li><a href="#genre2">Analytical</a></li>
             <li><a href="#genre3">Creative</a></li>
+            <li><a href="#closing-thoughts">Closing Thoughts</a></li>
+            <li><a href="#works-cited">Works Cited</a></li>
         </ul>
     </nav>
     
     <main>
-        <section id="introduction" class="intro">
-            <h2>Introduction</h2>
-            <p>Welcome to my multi-genre project exploring Toni Morrison's powerful novel "Beloved." Published in 1987, this Pulitzer Prize-winning masterpiece delves into the psychological and physical effects of slavery, examining themes of memory, trauma, identity, and the supernatural through the story of Sethe and her family.</p>
-            <p>This project is divided into three distinct genres, each offering a different perspective on the novel:</p>
+        <section id="introduction" class="genre-section">
+            <div class="genre-header">
+                <h2 class="genre-title">Introduction</h2>
+            </div>
+            <p>The central motif to this project will be the motif of home. This project is divided into three genres, each offering a different perspective on the novel:</p>
             <ul>
-                <li><strong>Informational:</strong> Providing context, background, and factual information about the novel and its historical setting</li>
-                <li><strong>Analytical:</strong> A critical examination of the novel's themes, symbols, and narrative techniques</li>
-                <li><strong>Creative:</strong> An original piano composition inspired by the novel's emotional landscape, with both audio and sheet music</li>
+                <li><strong>Informational:</strong> I chose to focus on the Fugitive Slave Act of 1850, and the true story of Margaret Garner, the main inspiration for Toni Morrison's novel “Beloved”.</li>
+                <li><strong>Analytical:</strong> I chose to do a deep dive on a passage in the latter half of the book, exploring its significance in Denver's character development, and the development of the motif of home.</li>
+                <li><strong>Creative:</strong> I chose to explore what “Beloved” would be like in a piano improvisation, with elements of Afrofuturism sprinkled in there, with both audio and sheet music.</li>
             </ul>
         </section>
         
         <div class="quote-section">
-            <p class="quote">"Freeing yourself was one thing, claiming ownership of that freed self was another."</p>
-            <p class="quote-author">— Toni Morrison, Beloved</p>
+            <p class="quote">"Freeing yourself was one thing; claiming ownership of that freed self was another" (Morrison 183).</p>
         </div>
         
         <!-- GENRE 1: INFORMATIONAL -->
@@ -266,43 +49,106 @@
             
             <p>This section provides essential context for understanding "Beloved," including historical background, author information, and key facts about the novel.</p>
             
-            <div class="info-grid">
-                <div>
-                    <h3>Historical Context</h3>
-                    <p>Based on the true story of Margaret Garner, an enslaved woman who killed her child rather than allowing her to be returned to slavery after escaping to Ohio in 1856. Morrison's novel explores the psychological aftermath of slavery in post-Civil War America.</p>
-                    
-                    <h3>Key Historical Events Referenced</h3>
-                    <ul>
-                        <li>The Fugitive Slave Act of 1850</li>
-                        <li>The Underground Railroad</li>
-                        <li>Reconstruction Era (1865-1877)</li>
-                        <li>Life in post-Civil War Cincinnati</li>
-                    </ul>
+            <div class="encyclopedia-article">
+                <h3>The Fugitive Slave Act of 1850</h3>
+                
+                <div class="article-image-right">
+                    <img src="images/fugitive_slave_act.jpg" alt="Illustration depicting the Fugitive Slave Act enforcement">
+                    <p class="image-caption">A period illustration showing the capture of an escaped enslaved person under the Fugitive Slave Act of 1850. (Image source: Library of Congress)</p>
                 </div>
                 
-                <div>
-                    <h3>About Toni Morrison</h3>
-                    <p>Toni Morrison (1931-2019) was a Nobel Prize-winning author known for her exploration of African American experiences. "Beloved" (1987) is considered her masterpiece and won the Pulitzer Prize for Fiction in 1988.</p>
-                    
-                    <h3>Literary Significance</h3>
-                    <p>The novel is renowned for its innovative narrative structure, use of magical realism, and unflinching portrayal of slavery's legacy. In 2006, The New York Times named "Beloved" the best American novel of the previous 25 years.</p>
+                <p>The Fugitive Slave Act of 1850 was actually the second such law in the history of the United States. Both acts aimed to enable slaveholders from the South to capture and return enslaved people who had escaped from one state into another, or into other federal territory.</p>
+                
+                <p>At the time in 1850, the measure was met with heavy opposition in the Northern states, with some enacting "personal liberty laws" to hamper the execution of the federal law. These state laws provided fugitives who appealed an original decision against them with the ability to have a jury trial.</p>
+                
+                <h4>Historical Context</h4>
+                <p>The 1850 act was part of the Compromise of 1850, a package of legislation that aimed to defuse escalating tensions between the free and slave states. It was considerably more stringent than the earlier Fugitive Slave Act of 1793, which had proven largely ineffective from the perspective of Southern slaveholders.</p>
+                
+                <div class="article-image-left">
+                    <img src="images/anthony_burns.jpg" alt="Anthony Burns, a famous fugitive slave case">
+                    <p class="image-caption">Anthony Burns, whose 1854 capture and trial in Boston became a hot button topic in the Northern resistance to the Fugitive Slave Act. (Image source: Massachusetts Historical Society)</p>
                 </div>
+                
+                <h4>Key Provisions</h4>
+                <ul>
+                    <li>Required citizens to assist in the recovery of fugitive slaves.</li>
+                    <li>Denied fugitives the right to a jury trial.</li>
+                    <li>Imposed penalties on officials who did not arrest alleged fugitives.</li>
+                    <li>Commissioners were paid $10 for returning a suspected fugitive, but only $5 if they determined the person was free. So basically it was just handing out money to people who caught black people.</li>
+                    <li>Federal marshals who refused to enforce the law or allowed fugitives to escape faced significant fines.</li>
+                </ul>
+                
+                <h4>Northern Resistance</h4>
+                <p>The law sparked significant resistance in the North. Many abolitionists actively defied it by participating in the Underground Railroad network, helping fugitives escape to Canada where British law protected
+                     them from American slave catchers. Several Northern states passed "personal liberty laws" that prohibited state officials from cooperating with federal enforcement of the act.</p>
+                
+                <p>Famous cases like that of Anthony Burns in Boston (1854) and the Christiana Resistance in Pennsylvania (1851) highlighted the growing tensions between federal law and Northern opposition to slavery.</p>
+                
+                <h4>Impact on "Beloved"</h4>
+                <p>In the novel "Beloved," the Fugitive Slave Act plays a crucial role to the backstory. Sethe's desperate act of killing her daughter rather than allowing her to be returned to slavery, was directly 
+                    motivated by the arrival of slave catchers empowered by this legislation. The trauma from this event forms the central conflict, and eventual subtle resolution of the novel. The Fugitive Slave Act connects
+                     to the present motif of home in Beloved in many ways. First, the Fugitive Slave Act prevents escaped slaves from establishing homes in northern states because they always have to be on the run from slave 
+                     catchers. It also connects to the motif of home with the idea of the Underground railroad. Abolitionists often use their homes as stops on this railroad, providing intermediary shelters for these escaped slaves. </p>
             </div>
-            
-            <h3>Timeline of Key Events in the Novel</h3>
-            <ul>
-                <li><strong>1855:</strong> Sethe escapes from Sweet Home plantation to 124 Bluestone Road</li>
-                <li><strong>1855:</strong> When slavecatchers arrive, Sethe attempts to kill her children, succeeding only in killing her unnamed "crawling already?" baby</li>
-                <li><strong>1865:</strong> Baby Suggs dies</li>
-                <li><strong>1873:</strong> Paul D arrives at 124 Bluestone Road</li>
-                <li><strong>1873:</strong> Beloved appears at 124</li>
-                <li><strong>1873-1874:</strong> The exorcism of Beloved by the women of the community</li>
-            </ul>
+            <div class="encyclopedia-article">
+                <h3>Margaret Garner: The True Story Behind "Beloved"</h3>
+                
+                <div class="article-image-right">
+                    <img src="images/margaret_garner.jpg" alt="Artistic depiction of Margaret Garner">
+                    <p class="image-caption">"The Modern Medea" by Thomas Satterwhite Noble, depicting Margaret Garner's tragic act. (Image source: Public domain)</p>
+                </div>
+                
+                <p>Margaret Garner (1834-1858) was an enslaved African American woman whose tragic story served as the inspiration for Toni Morrison's novel "Beloved." Born into slavery on June 4, 1834, at Maplewood plantation in 
+                    Boone County, Kentucky, her life and desperate escape attempt would become one of the most widely publicized fugitive slave cases in American history.</p>
+                
+                <h4>Life in Slavery</h4>
+                <p>Born to enslaved parents on the Maplewood plantation owned by A.K. (Edward) Gaines, Margaret worked as a indoor labourer, performing cleaning chores and waiting on the family. Historical accounts suggest she 
+                    was forced into a relationship with her master, who was likely the father of at least two of her children, a common but rarely acknowledged reality of slavery that Morrison explores in the book "Beloved."</p>
+                
+                <h4>The Escape</h4>
+                <p>In the winter of 1856, Margaret, her husband Robert, their four children, and Robert's parents made a desperate bid for freedom. The family fled the plantation and crossed the frozen Ohio River from Covington, 
+                    Kentucky, to Cincinnati, Ohio. They sought refuge with a black freeman named Elijah Kite, who turned to noted Quaker abolitionist Levi Coffin, often called the "president of the Underground Railroad", for 
+                    assistance.</p>
+                
+                <div class="article-image-left">
+                    <img src="images/ohio_river.jpg" alt="The Ohio River in winter">
+                    <p class="image-caption">The Ohio River, which the Garner family crossed while frozen in their escape to freedom. (Image source: Historical Society)</p>
+                </div>
+                
+                <h4>Capture and Tragedy</h4>
+                <p>Within hours of their arrival in Cincinnati, federal marshals discovered and surrounded the hideout. In a moment of devastating anguish Margaret Garner 
+                    attempted to kill her children rather than see them returned to slavery. When the marshals broke in, they found that she had killed her two-year-old daughter with a knife. Her other children were wounded 
+                    but survived.</p>
+                
+                <p>Her explanation, that her children would be "better off dead than forced to live as slaves", shocked the nation and thrust the realities of slavery into public debate. The Cincinnati Enquirer (a newspaper 
+                    at the time) published a sensational article about the arrest, noting that while many condemned the Garners, the incident also provided powerful testimony for abolitionists about the horrors of slavery.</p>
+                
+                <h4>The Trial</h4>
+                <p>The Garners became defendants in one of America's most publicized fugitive slave trials. Margaret requested to be tried in Ohio as a free person, even though it would mean facing the death penalty for 
+                    killing her child. However, authorities refused her request and tried her in Kentucky as property. As a result, she was not initially charged with her daughter's death.</p>
+                
+                <h4>Final Years</h4>
+                <p>After losing their case for freedom, the Garners were hidden by their owner Gaines to avoid murder charges. According to an 1870 interview with Robert Garner in the Cincinnati Chronicle, the couple was 
+                    sent in 1857 to work as household servants for one of Gaines's friends in New Orleans. Later, they were purchased by Judge Dewitt Clinton Bonham for plantation labor at Tennessee Landing, Mississippi.</p>
+                
+                <p>Margaret Garner died in Mississippi in 1858 of typhoid fever, still enslaved. Her husband's final words about her revealed her enduring resistance: before dying, she urged him to "never marry again in 
+                    slavery, but to live in hope of freedom."</p>
+
+                <h4>Impact on "Beloved"</h4>
+                <p>Toni Morrison's adaptation of Margaret Garner's story in "Beloved" explores the complex meaning of home for formerly enslaved people. In the novel, 124 Bluestone Road represents both sanctuary 
+                    and prison, Especially for Denver, how Sethe raised her and kept her inside this house, it was a prison. Yet also there was the aspect that the only family she ever knew lived inside this house as well. 
+                    The communal aspects of home are also explored through Morrison's portrayal of the Black community in Cincinnati, which both supports and ostracizes Sethe, much as the historical Cincinnati community had 
+                    did with Margaret Garner and her family. By the end of the novel, when the community women gather to exorcise Beloved from 124, through this, Morrison suggests that true home can only be established through 
+                    collective healing and reconciliation with the past,a process denied to the historical Margaret Garner but imaginatively extended to her fictional counterpart. So through Morrison's story of “Beloved”, 
+                    she hopes to give an alternative ending to Margaret Garner's story, giving it the conclusive finish that a good book needs, and also revealing for the questions that still persist today about the legacy of 
+                    slavery in America. </p>
+                
+            </div>
         </section>
         
         <div class="quote-section">
-            <p class="quote">"This is not a story to pass on."</p>
-            <p class="quote-author">— Toni Morrison, Beloved</p>
+            <p class="quote">"Definitions [belong] to the definers--not the defined" (Morrison 363).</p>
+
         </div>
         
         <!-- GENRE 2: ANALYTICAL -->
@@ -312,38 +158,34 @@
                 <h2 class="genre-title">Genre: Analytical</h2>
             </div>
             
-            <p>This analytical section examines the novel's complex themes, symbolism, and narrative techniques through close reading and critical interpretation.</p>
+            <p><strong>This section will analyze the passage “[She] Decided to stop relying on kindness to...on a noisy, busy street" (Morrison <a href="https://ct02210097.schoolwires.net/site/handlers/filedownload.ashx?moduleinstanceid=26616&dataid=28472&FileName=Beloved.pdf" title="A link to the pdf." target="_blank">476-477</a>).</strong></p>
+            <p class="indent"> This passage takes place after Beloved has lived with the family for a while, and she starts to infect the house and the minds of the members of the house with “illness.” Denver decides that
+                 she's had enough of Beloved taking everything from her and decides to venture out into society to find help. In this pivotal passage, Morrison uses character development, the symbolism of leaving the house,
+                  and the evolving motif of home to develop Denver's emergence from inherited trauma into a reawakened selfhood.</p>
+            <p class="indent">Firstly, the once protective home at 124 Bluestone Road, at this point in the book, has become of late a site of emotional trauma and familial decay: “They ignored her… growled when they chose; 
+                sulked… provoked each other to the edge of violence, then over (Morrison 477). This prompted Denver's realization that she could no longer save her family from within the walls of the suppressive house. By 
+                stepping outside, something she hadn't done much in her close to 18 years of life, she symbolically reclaims agency over her life. Distancing herself from the paralyzing grip of Sethe and Beloved's mutual 
+                obsession and also her trauma from Sethe killing Beloved earlier in her life. The moment with Nelson Lord, his simple farewell, “Take care of yourself, Denver” (477), resonates with her with a disproportionate
+                 power, functioning as the key that unlocks her sense of identity. Morrison uses this scene to illustrate that “home,” in the book Beloved, is not merely a physical structure but also a space in one's mind that
+                  can be shaped by memory and trauma, both good and bad. In the state of mind Denver used to be in, “[Nelson’s] words blocked up her ears. Now they opened her mind” (477). Morrison highlights this fact to note 
+                  the dramatic switch of Denver's psyche. Through Denver remembering this minute discussion with Nelson and her leaving of the house, Morrison evolves the motif of home and Denver's character to ultimately show
+                   that even through torrential trauma, one can be reborn.</p>
+            <p class="indent">As Denver ventures outside of her home, she begins to reconstruct this idea of home in her mind as something she can build herself, outside of the confines of the inherited suffering she has gotten
+                 throughout her life. In doing so, the motif of home expands into the idea that true belonging and safety can only exist when one claims agency over their lives, free from the “ghosts” of their past. Morrison also
+                  suggests that healing begins with the courage to leave one's suffering and redefine home for themselves, not as a haunted inheritance but as a place and also a state of mind that is good. Inside of Denver’s
+                   internal monologue, she says, “But unless Denver got work, there would be no one to save, no one to come home to, and no Denver either (477). She comes to this other realization that without the people inside
+                    of her home, she is no one. Without this collaboration and respective partnership with her family, even in times like this when they don't act like one, she relies on them to make herself better. She is starting
+                     to separate her idea of home from this house that she lives in, but she also has to start separating the idea of herself from the person she is inside the house. She would still mourn Beloved and Sethe if they
+                      were missing, yet Morrison made the literary choice to leave Denver until the end of the sentence to show that the number one thing on Denver's mind was her family, then herself. This is a turning point for
+                       Denver, as this priority in her mind begins to shift towards prioritizing herself and then her family. As Denver finally makes it to where she was going, through the maze that is Cincinnati, she notes, “The
+                        house sat back from the sidewalk with large windows looking out on a noisy, busy street” (477). She had just left the only house she had ever lived in, the house she knew the most. And here she comes to a 
+                        new one with new decorations. Morrison uses this contrast of setting to invoke in the memory of the reader the exact moment at which Denver started becoming her own person rather than the person she wanted
+                         her to become. And this moment is when she stepped outside the house and began to look for a way to help her family and herself.</p>
             
-            <h3>Trauma and Memory</h3>
-            <div class="analysis-container">
-                <p>Morrison's concept of "rememory" is central to the novel, suggesting that traumatic experiences persist in both physical and psychological spaces. Sethe's statement that "Some things go. Pass on. Some things just stay" encapsulates how slavery's trauma refuses to remain in the past.</p>
-                <p>The character of Beloved physically embodies this concept—she is simultaneously the murdered baby returned, the collective trauma of Middle Passage, and the manifestation of unprocessed grief. Her presence forces characters to confront memories they have suppressed.</p>
-            </div>
-            
-            <h3>Motherhood Under Slavery</h3>
-            <div class="analysis-container">
-                <p>The novel presents motherhood as both a site of profound love and devastating vulnerability. Sethe's infamous act—killing her daughter rather than allowing her to be enslaved—represents the impossible choices faced by enslaved mothers.</p>
-                <p>Morrison challenges readers to understand this act not as simple infanticide but as a complex expression of maternal love under an inhumane system. As Sethe explains, "I took and put my babies where they'd be safe."</p>
-            </div>
-            
-            <h3>Narrative Structure Analysis</h3>
-            <div class="analysis-container">
-                <p>Morrison's fragmented narrative technique mirrors the disjointed nature of traumatic memory. The novel moves between different time periods and perspectives without clear transitions, requiring readers to piece together the full story gradually—much as the characters themselves must reconstruct their fractured histories.</p>
-                <p>The stream-of-consciousness sections, particularly Beloved's monologue in Part 2, represent the disorienting experience of trauma and the collapse of boundaries between past and present, self and other.</p>
-            </div>
-            
-            <h3>Symbolism</h3>
-            <ul>
-                <li><strong>124 Bluestone Road:</strong> The house itself becomes a character, with its moods reflecting the psychological states of its inhabitants</li>
-                <li><strong>The tree on Sethe's back:</strong> Her scarred back represents both the physical brutality of slavery and how that past is permanently inscribed on her body</li>
-                <li><strong>Water imagery:</strong> Throughout the novel, water symbolizes both birth and rebirth (Beloved emerging from water) and the cleansing of memory</li>
-                <li><strong>Color red:</strong> Associated with trauma, pain, and repressed memory throughout the text</li>
-            </ul>
         </section>
         
         <div class="quote-section">
-            <p class="quote">"Anything dead coming back to life hurts."</p>
-            <p class="quote-author">— Toni Morrison, Beloved</p>
+            <p class="quote">"'Anything dead coming back to life hurts'" (Morrison 68).</p>
         </div>
         
         <!-- GENRE 3: CREATIVE -->
@@ -354,80 +196,67 @@
             </div>
             
             <div class="creative-description">
-                <p>This piano improvisation titled "[Your Composition Title]" is my emotional response to Toni Morrison's "Beloved." The piece attempts to capture the novel's themes of memory, trauma, love, and redemption through musical expression. I've drawn inspiration from the novel's fragmented narrative structure, incorporating dissonant passages that resolve into moments of lyrical beauty—much like the characters' painful journeys toward healing.</p>
-            </div>
+                <p>This section features an original piano composition inspired by the emotional landscape of "Beloved." The piece reflects the themes of memory, trauma, and the supernatural present in Morrison's novel.</p>
             
             <h3>Audio Recording</h3>
-            <p>Listen to my piano improvisation inspired by "Beloved":</p>
-            
-            <div class="upload-section">
-                <p>Upload your MP3 audio file:</p>
-                <input type="file" id="audio-upload" accept="audio/mp3">
-                <button class="upload-btn" onclick="uploadAudio()">Upload Audio</button>
-            </div>
-            
-            <audio id="beloved-audio" class="audio-player" controls>
-                <source src="" type="audio/mpeg">
+            <p>Beloved - A Piano Improvisation</p>
+            <audio controls>
+                <source src="beloved_piano_improv.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             
             <h3>Sheet Music</h3>
-            <p>View the musical score for my composition:</p>
-            
-            <div class="upload-section">
-                <p>Upload your PDF score:</p>
-                <input type="file" id="pdf-upload" accept="application/pdf">
-                <button class="upload-btn" onclick="uploadPDF()">Upload Score</button>
-            </div>
-            
-            <div class="pdf-viewer" id="score-viewer">
-                <p>PDF score will appear here after upload</p>
-            </div>
+            <embed src="beloved_a_piano_improvisationv2.pdf" type="application/pdf" width="100%" height="600px">
             
             <h3>Composition Notes</h3>
-            <p>This composition is structured in three movements, each representing different aspects of the novel:</p>
-            <ol>
-                <li><strong>Memory (0:00-2:30):</strong> Opening with fragmented, repetitive motifs that represent the disjointed nature of "rememory" in the novel</li>
-                <li><strong>Beloved's Return (2:31-5:15):</strong> Building tension and incorporating water-like arpeggios to symbolize Beloved's emergence from the water</li>
-                <li><strong>Community and Healing (5:16-end):</strong> Gradually resolving into a more harmonious section that represents the community's role in exorcising Beloved and beginning the healing process</li>
-            </ol>
+            <p class="indent">The piece starts with these extended arpeggios, Cm - F x2. These create a sense of going somewhere, but you don't know yet where you are going. This is done through the ii - V motion of the chords, signifying that 
+                you are going to I (Bb) but it instead goes back into the ii - V again. This parallels the start of beloved, in the way that the motif of home is introduced at the very start of the book, with the line 
+                “124 WAS SPITEFUL. Full of a baby's venom. The women in the house knew it and so did the children” (Morrison 1). This idea of 124, the house that Sethe, Denver, and Beloved live at is introduced in the 
+                first 2 sentences. Yet, as one reads further into the first chapter, the question is this a good/ functional home for this family arises. The improvisation continues by settling into a G minor blues feel, 
+                while also picking up the tempo a bit. The minor aspect adds to the overall sadness of the piece, reflecting on Sethe’s escape from slavery. The harmonic choice of Gm7 - G#dim7 introduces the idea of the ghost
+                of Beloved into the piece with the dissonant harmony. The influence of the blues is very present within this section, and through the piece as a whole. Blues came to be through the songs of slaves being shared 
+                as an oral tradition, much like jazz is today. As the piece develops, it begins to depart from the traditional 12 bar blues form and venture into freer, more open territory harmonically. This echoes the point 
+                in the novel when Beloved becomes part of the family again, and reality begins to blur. The piece then begins to shift into a sort of free jazz vibe, similar to Sun Ra’s work. This reflects on elements of 
+                Afrofuturism in music, like no tempo markings, and no real sense of mode or functional harmony. Evident in the music are close cluster chords that sound very dissonant, and right hand lines that seem to go 
+                nowhere, and not progressing the piece harmonically. This section ends with a repeated ostinato in the left hand and repeated octaves in the right. This parallels the point at which the town rises up against 
+                Beloved and she ultimately runs away. This causes the improvisation to recede back into a melancholy tone, with an ethereal chord progression of Gm11 - F - Ebmaj9 - Cm11 - F13sus - Bb. The additions to the 
+                chords like the 11s and the 13s give it the melancholy but ultimately brighter tone than that of the previous section. This section also used chord voicings inspired by Bill Evans, who was known as a master 
+                of the jazz ballad. This slow ballad-like section comes to an end with a Bb 6/9 chord, which is the I (home) but with the alteration of the 6/9 which leaves the piece with a finality, but also presents some 
+                further questions.
+            </p>
+            </section>
+
+
+        <section id="closing-thoughts" class="genre-section">
+            <div class="genre-header">
+                <h2 class="genre-title">Closing Thoughts</h2>
+            </div>
+            <p>Through reading “Beloved” and completing this project, I have come to a newfound understanding about the motif of home in Morrison’s novel. I came to realize that home is not just a building where one lives, 
+                but an emotional and mental space that can be shaped by trauma, love, grief, and the desire for unchained freedom. For Sethe, home is a place haunted by the past, where the act of trying to protect her children 
+                becomes a source of endless grief with the return of her act of murder in the grown version of Beloved. For Denver, home becomes a place she must grow beyond in order to find herself. Through all of this, and
+                 the rest of “Beloved”, Morrison suggests that home is something that must be reclaimed, redefined, and sometimes even rebuilt from the ruins of inherited suffering. This idea was especially vividly portrayed
+                  through Denver's growth and my exploration of the real life tragedy of Margaret Garner’s, which Morrison reshaped into a story of potential healing. My creative piece, using Afrofuturist ideas, traditional
+                   jazz and blues vocabulary, and musical improvisation, also reflects this idea. The idea is that home is a shifting, complex idea that can carry both pain and possibility. Ultimately, “Beloved” teaches that
+                    true home, and true freedom, can only exist when individuals and communities confront the “ghosts” of their past and come together to heal.
+            </p>
+            
         </section>
+        <section id="works-cited" class="genre-section">
+            <div class="genre-header">
+                <h2 class="genre-title">Works Cited</h2>
+            </div>
+            
+            <div class="works-cited-content">
+                <p class="citation">Edwards, Laura, and Kurt Lash. "The Fugitive Slave Act (1850) | Constitution Center." <em>National Constitution Center – Constitutioncenter.org</em>, 2022, constitutioncenter.org/the-constitution/historic-document-library/detail/the-fugitive-slave-act-1850. Accessed 16 Apr. 2025.</p>
+                
+                <p class="citation">Encyclopedia Britannica. "Fugitive Slave Acts | Definition & History." <em>Encyclopædia Britannica</em>, 17 Jan. 2018, www.britannica.com/event/Fugitive-Slave-Acts. Accessed 10 Apr. 2025.</p>
+                
+                <p class="citation">"Margaret Garner - Kentucky Commission on Human Rights." <em>Kchr.ky.gov</em>, kchr.ky.gov/Hall-of-Fame/Pages/Margaret-Garner.aspx. Accessed 16 Apr. 2025.</p>
+                
+                <p class="citation">Marshall Lewis, Miles. "Jazz and Afrofuturism: From Sun Ra to Flying Lotus." <em>Carnegiehall.org</em>, 2022, www.carnegiehall.org/Explore/Articles/2022/02/09/Jazz-and-Afrofuturism. Accessed 10 Apr. 2025.</p>
+            </div>
+        </section>
+
     </main>
-
-
-    <script>
-        function uploadAudio() {
-            const fileInput = document.getElementById('audio-upload');
-            const audioPlayer = document.getElementById('beloved-audio');
-            
-            if (fileInput.files && fileInput.files[0]) {
-                const file = fileInput.files[0];
-                const audioURL = URL.createObjectURL(file);
-                audioPlayer.src = audioURL;
-                audioPlayer.load();
-                alert('Audio uploaded successfully!');
-            } else {
-                alert('Please select an MP3 file to upload.');
-            }
-        }
-        
-        function uploadPDF() {
-            const fileInput = document.getElementById('pdf-upload');
-            const pdfViewer = document.getElementById('score-viewer');
-            
-            if (fileInput.files && fileInput.files[0]) {
-                const file = fileInput.files[0];
-                // In a real implementation, you would create an embed or iframe to display the PDF
-                // For this demonstration, we'll just show a message
-                pdfViewer.innerHTML = `
-                    <p>PDF "${file.name}" loaded successfully!</p>
-                    <p>(In a live version, the PDF would be displayed here)</p>
-                `;
-                alert('PDF uploaded successfully!');
-            } else {
-                alert('Please select a PDF file to upload.');
-            }
-        }
-    </script>
 </body>
 </html>
